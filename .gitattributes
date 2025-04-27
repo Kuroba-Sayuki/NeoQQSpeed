@@ -1,0 +1,3 @@
+*.md linguist-language=E linguist-detectable
+*.jpg linguist-language=C linguist-detectable
+*.png linguist-language=Cpp linguist-detectable
