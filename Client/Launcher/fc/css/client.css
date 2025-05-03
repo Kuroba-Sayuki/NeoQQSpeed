@@ -1,0 +1,551 @@
+div,
+span,
+iframe,
+h1,
+h2,
+p,
+a,
+em,
+img,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tr,
+th,
+td {
+	padding: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,
+select {
+	vertical-align: middle;
+}
+input,
+textarea,
+select {
+	font: 12px Tahoma;
+}
+fieldset,
+img {
+	border: 0;
+}
+address,
+code,
+caption,
+th,
+em {
+	font-style: normal;
+}
+ol,
+ul {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: 100%;
+}
+q:before,
+q:after {
+	content: "";
+}
+/* Bass */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body {
+	font: 12px/1.8 宋体, Tahoma, Arial, "simsun";
+	color: #81857d;
+	background-color: transparent;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+}
+.wraper {
+	position: relative;
+	width: 796px;
+	height: 596px;
+	background-color: #000;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.image-1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+	width: 796px;
+	height: 596px;
+}
+#bgImg {
+	width: 796px;
+	height: 596px;
+	object-fit: cover;
+	display: none;
+}
+/* 头部导航 */
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 34px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.nav {
+	position: relative;
+	left: 94px;
+	height: 100%;
+	display: flex;
+}
+.nav li {
+	width: 92px;
+	height: 100%;
+	position: relative;
+}
+.nav li::after {
+	content: " ";
+	width: 2px;
+	height: 10px;
+	position: absolute;
+	right: -1px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url(./../ui/line.png) center no-repeat;
+	background-size: 2px auto;
+}
+.nav li:last-child:after {
+	background: none;
+}
+.nav-item {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-item p {
+	width: 64px;
+	height: 23px;
+	background-image: url(./../ui/spr-all.png);
+	background-size: 258px 306px;
+	background-repeat: no-repeat;
+}
+
+.nav-item.nav0 p,
+.nav-item.nav0:link p,
+.nav-item.nav0:visited p {
+	width: 64px;
+	height: 23px;
+	background-position: -10px -10px;
+}
+
+.nav-item.nav1 p,
+.nav-item.nav1:link p,
+.nav-item.nav1:visited p {
+	width: 66px;
+	height: 23px;
+	background-position: -10px -53px;
+}
+
+.nav-item.nav2 p,
+.nav-item.nav2:link p,
+.nav-item.nav2:visited p {
+	width: 65px;
+	height: 24px;
+	background-position: -10px -96px;
+}
+
+.nav-item.nav3 p,
+.nav-item.nav3:link p,
+.nav-item.nav3:visited p {
+	width: 66px;
+	height: 24px;
+	background-position: -10px -140px;
+}
+
+.nav-item.nav4 p,
+.nav-item.nav4:link p,
+.nav-item.nav4:visited p {
+	width: 64px;
+	height: 24px;
+	background-position: -10px -184px;
+}
+
+.nav-item.nav5 p,
+.nav-item.nav5:link p,
+.nav-item.nav5:visited p {
+	width: 65px;
+	height: 24px;
+	background-position: -10px -228px;
+}
+
+.nav-item.nav6 p,
+.nav-item.nav6:link p,
+.nav-item.nav6:visited p {
+	width: 52px;
+	height: 24px;
+	background-position: -10px -272px;
+}
+
+/* active-按下 */
+.nav-item.nav0:active p {
+	width: 64px;
+	height: 23px;
+	background-position: -96px -10px;
+}
+
+.nav-item.nav1:active p {
+	width: 66px;
+	height: 23px;
+	background-position: -96px -53px;
+}
+
+.nav-item.nav2:active p {
+	width: 65px;
+	height: 24px;
+	background-position: -96px -96px;
+}
+
+.nav-item.nav3:active p {
+	width: 66px;
+	height: 24px;
+	background-position: -96px -140px;
+}
+
+.nav-item.nav4:active p {
+	width: 64px;
+	height: 24px;
+	background-position: -96px -184px;
+}
+
+.nav-item.nav5:active p {
+	width: 65px;
+	height: 24px;
+	background-position: -96px -228px;
+}
+
+.nav-item.nav6:active p {
+	width: 52px;
+	height: 24px;
+	background-position: -96px -272px;
+}
+
+/* active */
+
+/* 点击*/
+.nav-item.nav0.on p {
+	width: 64px;
+	height: 23px;
+	background-position: -96px -10px;
+}
+
+.nav-item.nav1.on p {
+	width: 66px;
+	height: 23px;
+	background-position: -96px -53px;
+}
+
+.nav-item.nav2.on p {
+	width: 65px;
+	height: 24px;
+	background-position: -96px -96px;
+}
+
+.nav-item.nav3.on p {
+	width: 66px;
+	height: 24px;
+	background-position: -96px -140px;
+}
+
+.nav-item.nav4.on p {
+	width: 64px;
+	height: 24px;
+	background-position: -96px -184px;
+}
+
+.nav-item.nav5.on p {
+	width: 65px;
+	height: 24px;
+	background-position: -96px -228px;
+}
+
+.nav-item.nav6.on p {
+	width: 52px;
+	height: 24px;
+	background-position: -96px -272px;
+}
+/* 点击 */
+
+/*  -鼠标移上去*/
+.nav-item.nav0.move p {
+	width: 64px;
+	height: 23px;
+	background-position: -182px -10px;
+}
+
+.nav-item.nav1.move p {
+	width: 66px;
+	height: 23px;
+	background-position: -182px -53px;
+}
+
+.nav-item.nav2.move p {
+	width: 65px;
+	height: 24px;
+	background-position: -182px -96px;
+}
+
+.nav-item.nav3.move p {
+	width: 66px;
+	height: 24px;
+	background-position: -182px -140px;
+}
+
+.nav-item.nav4.move p {
+	width: 64px;
+	height: 24px;
+	background-position: -182px -184px;
+}
+
+.nav-item.nav5.move p {
+	width: 65px;
+	height: 24px;
+	background-position: -182px -228px;
+}
+
+.nav-item.nav6.move p {
+	width: 52px;
+	height: 24px;
+	background-position: -182px -272px;
+}
+
+/* hover */
+
+/* 关闭游戏 */
+.nav-close {
+	width: 59px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(./../ui/close-bg.png);
+	background-size: 59px 24px;
+}
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 38px;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-content {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spart-logo {
+	display: block;
+	width: 84px;
+	height: auto;
+	margin-right: 17px;
+}
+.speed-logo {
+	display: block;
+	width: 64px;
+	height: auto;
+	margin-right: 15px;
+}
+.footer-text {
+	height: 100%;
+	color: #d5d5d5;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.footer-text p {
+	height: 14px;
+	line-height: 14px;
+}
+.footer-text .net-text {
+	color: #d5d5d5;
+	text-decoration: underline;
+}
+.logo {
+	display: block;
+	position: absolute;
+	width: 98px;
+	height: 74px;
+	top: 8px;
+	left: 8px;
+}
+.right-content {
+	width: 325px;
+	height: 177px;
+	position: absolute;
+	box-sizing: border-box;
+	top: 40px;
+	left: 455px;
+	padding: 2px;
+	background-color: #000;
+	background-image: url(./../ui/vip-bg.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: 100% 100%;
+}
+/* 资讯样式 */
+.vip {
+	width: 321px;
+	height: 175px;
+	overflow: hidden;
+	position: relative;
+}
+.gg_box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.none {
+	display: none;
+}
+.gg_box img {
+	width: 321px;
+	height: 175px;
+}
+.gg_num {
+	bottom: 26px;
+	height: 16px;
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.gg-num p {
+	white-space: nowrap;
+}
+.gg_num i {
+	background: url(./../ui/dot.png) no-repeat center center;
+	background-size: 11px 11px;
+	cursor: pointer;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	line-height: 19px;
+	margin: 0 3px 0 0;
+	text-align: center;
+}
+.gg_num i.curr {
+	background: url(./../ui/dotcur.png) no-repeat center center;
+	background-size: 19px 19px;
+}
+
+.news {
+	width: 321px;
+	background: rgba(0, 0, 0, 0.5);
+	height: 18px;
+	color: #d0d0d0;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.news ul {
+	width: 100%;
+
+	box-sizing: border-box;
+}
+
+.news li {
+	background: url(./../ui/arr2.png) no-repeat 3px 4px;
+	background-size: 6px 37px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 0 0 0 20px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 50px;
+}
+.swiper {
+	height: 100%;
+}
+.news .top_news {
+	background: url(./../ui/video.png) no-repeat left center;
+	background-size: 12px 14px;
+	color: #ff9600;
+}
+.news a {
+	color: #d0d0d0;
+}
+.top_news .news_text {
+	width: 154px;
+	left: 95px;
+}
+#scrollNews {
+	margin-top: 0px;
+}
+.top {
+	padding-top: 3px;
+	color: #ff9600;
+}
+.top_news a {
+	color: #ff9600;
+}
+.news li span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.swiper {
+	height: 100%;
+}
+.swiper-slide {
+	width: 18px;
+}
+.swiper-slide li {
+	list-style: none;
+}

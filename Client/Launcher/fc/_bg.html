@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="all" />
+  <meta http-equiv="Cache-Control" content="max-age=3600" />
+  <meta name="description" content="界面背景" />
+  <title>界面背景</title>
+  <link rel="stylesheet" href="./css/client.css" />
+</head>
+
+<body draggable="false">
+  <div class="wraper">
+    <div class="bg">
+      <img class='image-1' src="ui/bg.gif" draggable="false">
+    </div>
+    <div class="header">
+      <ul class="nav">
+        <li><a href="javascript:;" class="nav-item nav0" onclick="PTTSendClick('官网首页');" draggable="false">
+            <p>官网首页</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav1" onclick="PTTSendClick('教学视频');" draggable="false">
+            <p>教学视频</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav2" onclick="PTTSendClick('游戏下载');" draggable="false">
+            <p>游戏下载</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav3" onclick="PTTSendClick('玩家论坛');" draggable="false">
+            <p>玩家论坛</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav4" onclick="PTTSendClick('掌上飞车');" draggable="false">
+            <p>掌上飞车</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav5" onclick="PTTSendClick('在线客服');" draggable="false">
+            <p>在线客服</p>
+          </a></li>
+        <li><a href="javascript:;" class="nav-item nav6" onclick="PTTSendClick('道具城');" draggable="false">
+            <p>道聚城</p>
+          </a></li>
+      </ul>
+      <img src="./ui/logo.png" alt="" class="logo" draggable="false">
+      <div class="nav-close"> </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <img src="./ui/sparklogo.png" alt="" class="spart-logo" draggable="false">
+        <a href="javascript:;" onclick="ATTSendClick('琳琅天上');" target="_blank" draggable="false"> <img src="./ui/speedlogo.png"
+            alt="琳琅天上" class="speed-logo" draggable="false"></a>
+        <div class="footer-text">
+          <p>Copyright &copy; 2008-2022 Tencent Inc.All Rights Reserved.</p>
+          <p>任何单位或个人制作,传播外挂属于非法活动,将依法严厉打击! <a href="javascript:;" onclick="ATTSendClick('other');" class="net-text" target="_blank"
+              draggable="false">粤网文[2011]0483-070号</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  <script>
+
+function initTopMenu() {
+	var navList = document.getElementsByClassName('nav-item');
+	for (var i = 0; i < navList.length; i++) {
+		(function (j) {
+			navList[j].addEventListener('mousedown', function () {
+				for (var k = 0; k < navList.length; k++) {
+					navList[k].classList.remove('on');
+					navList[k].classList.remove('move');
+				}
+				navList[j].classList.add("on");
+
+			})
+			navList[j].addEventListener('mouseup', function () {
+				navList[j].classList.remove("on");
+			})
+
+
+			navList[j].addEventListener('mouseover', function () {
+				for (var k = 0; k < navList.length; k++) {
+					navList[k].classList.remove('on');
+					navList[k].classList.remove('move');
+				}
+				navList[j].classList.add("move");
+			})
+
+			navList[j].addEventListener('mouseout', function () {
+				for (var k = 0; k < navList.length; k++) {
+					navList[k].classList.remove('on');
+					navList[k].classList.remove('move');
+				}
+			})
+		})(i)
+	}
+}
+	initTopMenu();
+  </script>
+</html>
