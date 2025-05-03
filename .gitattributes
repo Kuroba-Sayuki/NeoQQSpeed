@@ -1,3 +1,7 @@
 *.md linguist-language=E linguist-detectable
-*.jpg linguist-language=C linguist-detectable
-*.png linguist-language=Cpp linguist-detectable
+*.e linguist-language=E linguist-detectable
+*.ec linguist-language=E linguist-detectable
+*.c linguist-language=C linguist-detectable
+*.h linguist-language=C linguist-detectable
+*.cpp linguist-language=Cpp linguist-detectable
+*.lua linguist-language=Lua linguist-detectable
