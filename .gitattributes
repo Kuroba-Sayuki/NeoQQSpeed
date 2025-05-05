@@ -5,3 +5,9 @@
 *.h linguist-language=C linguist-detectable
 *.cpp linguist-language=Cpp linguist-detectable
 *.lua linguist-language=Lua linguist-detectable
+*.html linguist-language=HTML linguist-detectable
+*.css linguist-language=CSS linguist-detectable
+*.gif linguist-language=C linguist-detectable
+*.png linguist-language=C linguist-detectable
+*.jpg linguist-language=Cpp linguist-detectable
+*.jpeg linguist-language=Cpp linguist-detectable
